@@ -1,0 +1,10 @@
+<div class="grid grid-cols-4 gap-4 p-4">
+  {#each traits as trait}
+    <button
+      class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-800"
+      on:click={() => toggleTrait(trait)}
+    >
+      {trait}
+    </button>
+  {/each}
+</div>
