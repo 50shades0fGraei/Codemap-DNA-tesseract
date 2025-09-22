@@ -11,3 +11,14 @@ class SpiralConvergence:
             "dimensions": 3,
             "duality": "converged"
         }
+
+def calculate_resonance(outer_traits, inner_traits):
+    return len(set(outer_traits) & set(inner_traits)) / len(set(outer_traits + inner_traits))
+
+def map_dimensions(traits):
+    return {trait: {"x": i % 3, "y": (i // 3) % 3, "z": i // 9} for i, trait in enumerate(traits)}
+import hashlib
+
+def generate_invocation_hash(traits, planes, duality):
+    raw = "-".join(traits + planes + [duality])
+    return hashlib.sha256(raw.encode()).hexdigest()[:16]
