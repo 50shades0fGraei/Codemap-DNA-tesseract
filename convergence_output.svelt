@@ -1,0 +1,12 @@
+{#if convergence}
+  <div class="mt-8 p-4 bg-gray-100 rounded shadow">
+    <h2 class="text-xl font-bold">🌀 Convergence Output</h2>
+    <p><strong>Invocation Hash:</strong> {convergence.hash}</p>
+    <p><strong>Resonance Score:</strong> {convergence.resonance}</p>
+    <ul>
+      {#each convergence.traits as trait}
+        <li>{trait} → {JSON.stringify(convergence.dimensions[trait])}</li>
+      {/each}
+    </ul>
+  </div>
+{/if}
