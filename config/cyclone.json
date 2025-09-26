@@ -1,0 +1,5 @@
+{
+  "alpha": { "range": ["0001", "0999"], "allowedStrands": ["L", "I"] },
+  "beta": { "range": ["1000", "1999"], "allowedStrands": ["M"] },
+  "delta": { "range": ["2000", "2999"], "allowedStrands": ["O"] }
+}
