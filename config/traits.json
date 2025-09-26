@@ -1,0 +1,5 @@
+{
+  "trait:search": ["L", "I"],
+  "trait:visual": ["O"],
+  "trait:archive": ["M"]
+}
