@@ -1,0 +1,6 @@
+{
+  "mirror.reflect": "codemap://library/mirror/reflect",
+  "vault.echo": "codemap://summoner/vault/echo",
+  "altar.summon": "codemap://altar/summon",
+  "graei.overlay": "codemap://overlays/graei"
+}
